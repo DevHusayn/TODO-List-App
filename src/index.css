@@ -1,0 +1,146 @@
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.Todolist-box {
+  background: #fff;
+  max-width: 420px;
+  margin: 48px auto 0 auto;
+  padding: 32px 28px 28px 28px;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px 0 rgba(60, 72, 88, 0.15), 0 1.5px 4px 0 rgba(60, 72, 88, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Todolist-box h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #4f46e5;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.Todolist-box input[type="text"] {
+  width: 70%;
+  padding: 10px 14px;
+  border: 1.5px solid #c7d2fe;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.Todolist-box input[type="text"]:focus {
+  border-color: #6366f1;
+}
+
+.Todolist-box button {
+  padding: 9px 18px;
+  margin-left: 8px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(99, 102, 241, 0.08);
+  transition: background 0.2s, transform 0.1s;
+}
+
+.Todolist-box button:hover {
+
+  transform: translateY(-2px) scale(1.04);
+}
+
+.list-box {
+  width: 100%;
+  margin-top: 10px;
+
+}
+
+.list-box ol {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.list-box li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f5f9;
+  border-radius: 7px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  font-size: .8rem;
+  box-shadow: 0 1px 4px 0 rgba(60, 72, 88, 0.06);
+  transition: background 0.2s;
+}
+
+.list-box li span {
+  flex: 1;
+  color: #22223b;
+  font-weight: 500;
+
+}
+
+.add-btn {
+  background: #4f46e5;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background: #3730a3;
+}
+
+.del-btn {
+  background: red;
+  color: #fff;
+  margin-left: 8px;
+  size: 10px;
+  transition: background 0.2s;
+}
+
+.del-btn:hover {
+  background: #b91c1c;
+}
+
+.moveup-btn {
+  background: green;
+  color: #3730a3;
+  transition: background 0.2s;
+}
+
+.moveup-btn:hover {
+  background: #4ade80;
+}
+
+.movedown-btn {
+  background: #09219e;
+  color: #3730a3;
+  margin-left: 8px;
+  transition: background 0.2s;
+}
+
+.movedown-btn:hover {
+  background: #3b82f6;
+}
+
+@media (max-width: 600px) {
+  .Todolist-box {
+    max-width: 98vw;
+    padding: 18px 6vw 18px 6vw;
+  }
+
+  .Todolist-box input[type="text"] {
+    width: 100%;
+  }
+}
